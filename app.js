@@ -5,7 +5,7 @@ let tentativas = 1;
 msgInicial()
 
 function msgInicial(){
-    exibirTextoTela("h1", "Jogo do CAPETA")
+    exibirTextoTela("h1", "Jogo da Adivinhação")
     exibirTextoTela("p", "escolha um numero") 
 }
 
@@ -19,7 +19,7 @@ function verificarChute(){
     console.log(numeroSecreto)
 
     if(chute == numeroSecreto){
-        exibirTextoTela("h1", "BOA VIADO")
+        exibirTextoTela("h1", "BOAAAA")
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa"
         let msgTentativas = `voce acertou o numero com ${tentativas} ${palavraTentativa}`
         exibirTextoTela("p", msgTentativas)
